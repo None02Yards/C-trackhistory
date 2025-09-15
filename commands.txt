@@ -1,0 +1,12 @@
+.\browser.exe
+ visit gfg.org
+ visit google.com
+ visit youtube.com
+ back 2         # expect: gfg.org
+ forward 1      # expect: google.com
+ newtab geeksforgeeks.org
+ tabs           # shows both tabs, * marks active
+ switch 0
+ print
+ save session.json
+ quit
